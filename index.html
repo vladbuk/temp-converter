@@ -31,19 +31,10 @@
                     <input type="number" id="celsius" placeholder="0" step="any">
                 </div>
 
-                <button id="swap-btn" class="icon-exchange" aria-label="Swap units">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M7 10v12" />
-                        <path d="M15 10.5a2.5 2.5 0 0 1 5 0v10.5a2 2 0 0 1-5 0v-10.5" />
-                        <path d="M10.33 16.5a2.5 2.5 0 0 1-5 0v-8.3a4.5 4.5 0 0 1 9 0v8.3" />
-                        <path d="m12 14 3-3 3 3" />
-                        <path d="M12 2v4" />
-                        <path d="m12 18 3 3 3-3" />
-                    </svg>
-                    <!-- Simple arrows icon replacement for clarity if needed, but using abstract exchange visual -->
-                    <span class="exchange-symbol">⇄</span>
-                </button>
+                <div id="swap-btn" class="icon-exchange" role="button" tabindex="0" aria-label="Swap units">
+                    <!-- Simple arrows icon replacement for clarity -->
+                    <span class="exchange-symbol rotate-90">⇄</span>
+                </div>
 
                 <div class="input-wrapper">
                     <label for="fahrenheit">Фаренгейт (°F)</label>
